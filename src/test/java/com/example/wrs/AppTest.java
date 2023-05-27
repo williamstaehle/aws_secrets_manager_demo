@@ -1,24 +1,20 @@
 package com.example.wrs;
 
-import static org.junit.Assert.assertTrue;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import org.junit.Test;
+import static org.testng.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
+
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void testAWSSM_hostValue()
     {
         MySecrets ms = new MySecrets();
-        String secret = ms.getHostSecret();
+        String actualSecret = ms.getHostSecret();
+        String expectedSecret = "RyanSeacrest";
 
-        
-        assertTrue( true );
+        assertEquals(actualSecret, expectedSecret, "The expected secret was not returned");
     }
 }

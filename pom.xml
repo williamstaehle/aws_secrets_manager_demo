@@ -19,34 +19,24 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  
-    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-secretsmanager 
-    <dependency>
-        <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk-secretsmanager</artifactId>
-        <version>1.12.360</version>
-    </dependency>
--->
-      <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/secretsmanager -->
+
       <dependency>
           <groupId>software.amazon.awssdk</groupId>
           <artifactId>secretsmanager</artifactId>
           <version>2.18.30</version>
       </dependency>
-      
-      <!-- https://mvnrepository.com/artifact/org.json/json -->
+
       <dependency>
           <groupId>org.json</groupId>
           <artifactId>json</artifactId>
           <version>20230227</version>
       </dependency>
-
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.1</version>
+            <scope>compile</scope>
+        </dependency>
   </dependencies>
   
 
