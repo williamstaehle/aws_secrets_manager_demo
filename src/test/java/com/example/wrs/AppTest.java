@@ -17,4 +17,11 @@ public class AppTest
 
         assertEquals(actualSecret, expectedSecret, "The expected secret was not returned");
     }
+
+    @Test
+    public void testtwo() {
+        String valueone = "two";
+        String valuetwo = "two";
+        assertEquals(valueone, valuetwo);
+    }
 }

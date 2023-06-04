@@ -6,6 +6,7 @@
             <class name="com.example.wrs.AppTest">
                 <methods>
                     <include name="testAWSSM_hostValue" />
+                    <include name="testtwo" />
                 </methods>
             </class>
         </classes>
