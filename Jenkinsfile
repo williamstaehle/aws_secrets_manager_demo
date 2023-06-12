@@ -8,8 +8,10 @@ pipeline {
     stages {
         stage("Test") {
             steps {
-                echo 'Testing..'
-                sh 'mvn test'
+                withAWS(credentials, 'aws-poc', region, 'us-east-1') {
+                    echo 'Testing..'
+                    sh 'mvn test'
+                }
             }
         }
     }
