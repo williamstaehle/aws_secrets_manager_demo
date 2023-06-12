@@ -21,7 +21,9 @@ public class AppTest
     @Test
     public void testtwo() {
         String valueone = "two";
-        String valuetwo = "two";
+        String valuetwo = "one";
         assertEquals(valueone, valuetwo);
     }
+
+
 }
