@@ -9,7 +9,9 @@ pipeline {
         stage("Test") {
             steps {
                 echo 'Testing..'
-                sh 'mvn test'
+                withAWS(credentials: "aws-poc") {
+                    sh 'mvn test'
+                }
             }
         }
     }
